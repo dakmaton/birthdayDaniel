@@ -1,9 +1,22 @@
+@font-face {
+    font-family: "Shiny";
+    src: url(../fonts/Upstand\ Signature.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
 :root {}
+
+body {
+    background: url("../img/png-transparent-texture-mapping-paper-huawei-mate-8-android-wood-texture-texture-3d-computer-graphics-brown.png") center center fixed;
+    margin: 0;
+    padding: 0;
+}
 
 .container {
     display: flex;
@@ -12,40 +25,42 @@
     flex-direction: column;
 }
 
-.containerimg {
-    position: relative;
-    display: flex;
-    justify-content: center;
+.cuadrado {
+    display: block;
     align-items: center;
+    padding: 13vh;
+    margin: 1vh;
+    align-items: center;
+    background-color: black;
+    border-radius: 20px;
+}
+.cabecera {
+    font-family: "Shiny";
+    color: rgb(250, 219, 94);
+    margin-top: 4vh;
+    padding: 0;
 }
 
-.containervid {
-    display: flex;
-    justify-content: center;
+.cabecera h1 {
+    font-size: 9vh;
+    text-align: center;
 }
 
-.containervid video {
-    width: 80%;
-    height: auto;
-}
-
-.imagen {
-    width: 80%;
-    height: 100%;
-    position: relative;
-    z-index: 1; 
+.cabecera .centro {
+    text-align: center;
+    font-size: 25vh;
 }
 
 .contador {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 50%);
-    background-color: rgba(255, 255, 255, 0.7); 
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    z-index: 2; 
+    z-index: 2;
 }
 
 .timer {
@@ -76,54 +91,22 @@
     animation: in-top 0.5s ease;
 }
 
+.btnWsp{
+    display: block;
+    align-items: center;
+    width: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    margin: 158px;
+    background-color: green;
+    border-radius: 18px;
+}
 @keyframes in-top {
     from {
-        transform: rotate3d(-1, 0, 0, 90deg)
+        transform: rotate3d(-1, 0, 0, 90deg);
     }
+
     to {
-        transform: rotate3d(0, 0, 0, 0deg)
-    }
-}
-
-@media (max-width: 900px) {
-    .box {
-        font-size: 3rem;
-        width: 60px;
-        height: 60px;
-        line-height:   60px;
-    }
-    .contador{
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, 20%);
-    }
-}
-
-@media (max-width: 600px) {
-    .box {
-        font-size: 1.5rem;
-        width: 30px;
-        height: 30px;
-        line-height:   30px;
-    }
-    .contador{
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, 20%);
-    }
-}
-
-
-@media (max-width: 400px) {
-    .box {
-        font-size: 1rem;
-        width: 25px;
-        height: 25px;
-        line-height:   30px;
-    }
-    .contador{
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, 10%);
+        transform: rotate3d(0, 0, 0, 0deg);
     }
 }

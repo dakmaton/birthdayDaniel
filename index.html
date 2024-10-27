@@ -5,22 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cumpleaños Daniel</title>
-    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="style/Style.css">
 
 </head>
 
 <body>
     <main class="container">
-        <div class="containervid">
-            <video muted autoplay loop>
-                <source src="video/andrea.mp4" type="video/mp4">
-            </video>
-        </div>
-        <div class="containerimg">
-            <img class="imagen" src="img/1.png" alt="">
-        </div>
-        <div class="containerimg">
-            <img class="imagen" src="img/2.png" alt="">
+        <div class="cuadrado">
+            <div class="cabecera">
+                <h1>CELEBREMOS MIS</h1>
+                <h1 class="centro">50</h1>
+                <h1>AÑOS</h1>
+            </div>
             <div class="contador">
                 <div class="timer">
                     <div>
@@ -41,24 +37,10 @@
                     </div>
                 </div>
             </div>
+            <div class="btnWsp">
+                <a href="https://api.whatsapp.com/send?phone=51928794262&text=confirmo%20mi%20asistencia">Confirmar Asistencia</a>
+            </div>
         </div>
-
-        <div class="containerimg">
-            <img class="imagen" src="img/3.png" alt="">
-        </div>
-        <div class="containerimg">
-            <img class="imagen" src="img/4.png" alt="">
-        </div>
-        <div class="containerimg">
-            <img class="imagen" src="img/5.png" alt="">
-        </div>
-        <div class="containerimg">
-            <img class="imagen" src="img/6.png" alt="">
-        </div>
-
-        <audio id="audioPlayer" autoplay loop>
-            <source src="audio/audio.mp3" type="audio/mpeg">
-        </audio>
     </main>
     <script src="js/contador.js"></script>
 </body>
